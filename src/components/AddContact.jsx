@@ -3,10 +3,9 @@ import React from "react";
 class AddContact extends React.Component{
     render(){
         return(
-            <div>
-                <div>
+                <div className="ui main">
                     <h2>Add Contact</h2>
-                    <form>
+                    <form className="ui form">
                         <div>
                             <label>Name</label>
                             <input type="text" name = "name" placeholder="Siddharth Bisht" />
@@ -18,7 +17,6 @@ class AddContact extends React.Component{
                         <button className="ui button blue">Add</button>
                     </form>
                 </div>
-            </div>
         );
     }
 }

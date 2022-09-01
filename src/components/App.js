@@ -17,11 +17,14 @@ function App() {
       email : "sid@abc.com"
     }
   ]);
+  const addContactHandler = (contact) =>{
+    console.log(contact);
+  }
 
   return (
     <div className="ui container">
       <Header />    
-      <AddContact AddContactHandler />
+      <AddContact addContactHandler = {addContactHandler} />
       <ContactList contacts = {contacts} />
     </div>
   );
